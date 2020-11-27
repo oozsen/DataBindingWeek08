@@ -9,8 +9,13 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <Entry x:Name="EntryName" Text="" Placeholder="Enter name" />
-        <Label Text="" />
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to BIM493" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+
+
+        <Entry Text="{Binding Name}" Placeholder="Enter name" />
+        <Label Text="{Binding DisplayName}" />
     </StackLayout>
 
 </ContentPage>
