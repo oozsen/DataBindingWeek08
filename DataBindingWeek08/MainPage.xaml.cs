@@ -15,5 +15,10 @@ namespace DataBindingWeek08
             InitializeComponent();
             //BindingContext = new MainViewModel();
         }
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
+        }
     }
 }

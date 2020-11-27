@@ -16,6 +16,9 @@
 
         <Entry Text="{Binding Name}" Placeholder="Enter name" />
         <Label Text="{Binding DisplayName}" />
+
+        <Button Text="Go to Page 2" HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>

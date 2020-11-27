@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBindingWeek08.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Binding Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            </Frame>
+
+            <Label Text="{Binding Description}" FontSize="Title"
+                   Padding="30,10,30,10"/>            
+            <Entry Text="{Binding SomeNumber, Mode=TwoWay}"/>
+            <!--<Label Text="{Binding SomeDouble}"                
+                   FontSize="16" Padding="30,10,30,10"/>-->
+            <Label Text="{Binding SomeDouble,
+                StringFormat='{0:0.00}'}"
+                   FontSize="16" Padding="30,10,30,10"/>
+            <Label Text="{Binding ImageUrl, TargetNullValue='No Image Found'}"                
+                   FontSize="16" Padding="30,10,30,10"/>
+            <Image Source="{Binding ImageUrl}"/>
+            <Image Source="{Binding ImageUrl,
+                TargetNullValue='https://upload.wikimedia.org/wikipedia/commons/2/20/Point_d_interrogation.jpg'}" />
+            <Image Source="{Binding SomeOtherProperty,
+                FallbackValue='https://upload.wikimedia.org/wikipedia/commons/2/20/Point_d_interrogation.jpg'}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
