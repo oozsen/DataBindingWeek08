@@ -13,6 +13,7 @@ namespace DataBindingWeek08
         public MainPage()
         {
             InitializeComponent();
+            //BindingContext = new MainViewModel();
         }
     }
 }
