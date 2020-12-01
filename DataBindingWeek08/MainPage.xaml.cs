@@ -13,7 +13,7 @@ namespace DataBindingWeek08
         public MainPage()
         {
             InitializeComponent();
-            //BindingContext = new MainViewModel();
+            //BindingContext = new MainViewModel();   //instead it's used on the XAML side.
         }
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
