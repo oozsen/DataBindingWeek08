@@ -12,13 +12,19 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to BIM493" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
         </Frame>
-
+        <Label Text="Hello, Bindings" TextColor="Blue"
+               HorizontalOptions="Center" Padding="24" FontSize="Large"
+               Rotation="{Binding Source={x:Reference slider},
+                    Path=Value}"/>
 
         <Entry Text="{Binding Name}" Placeholder="Enter name" />
         <Label Text="{Binding DisplayName}" />
 
+        <Slider x:Name="slider" Minimum="0" Maximum="360" />
+
         <Button Text="Go to Page 2" HorizontalOptions="Center"
                 Clicked="Button_Clicked"/>
+                
     </StackLayout>
 
 </ContentPage>
