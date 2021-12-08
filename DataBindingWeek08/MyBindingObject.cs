@@ -7,8 +7,10 @@ namespace DataBindingWeek08
         public int SomeNumber { get; set; } = 2020;
         public double SomeDouble { get; set; } = 3.1415927d;
         public string ImageUrl { get; set; } = null;
-        
+        public string Color{ get; set; }
+        public string Name { get; set; }
+
         //https://upload.wikimedia.org/wikipedia/commons/2/20/Point_d_interrogation.jpg
-        
+
     }
 }

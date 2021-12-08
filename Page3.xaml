@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:databindingweek08="clr-namespace:DataBindingWeek08"
+    x:Class="DataBindingWeek08.Page3">
+    <ContentPage.Resources>
+        <databindingweek08:CustomColorConverter x:Key="colorConverter"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Value Converter Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            </Frame>
+            <Label x:Name="ResultLabel" Text="{Binding Color}"
+                   TextColor="{Binding Color, Converter={StaticResource colorConverter},
+                ConverterParameter=1}"
+                   FontSize="Title" Padding="30,10,30,10"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

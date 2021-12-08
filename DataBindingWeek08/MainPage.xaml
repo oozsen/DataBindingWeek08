@@ -24,7 +24,9 @@
 
         <Button Text="Go to Page 2" HorizontalOptions="Center"
                 Clicked="Button_Clicked"/>
-                
+
+        <Button Text="Value Converter Sample" HorizontalOptions="Center"
+                Clicked="Button2_Clicked"/>                
     </StackLayout>
 
 </ContentPage>

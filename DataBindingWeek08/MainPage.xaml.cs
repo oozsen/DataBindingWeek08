@@ -20,5 +20,10 @@ namespace DataBindingWeek08
         {
             Navigation.PushAsync(new Page2());
         }
+
+        void Button2_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Page3());
+        }
     }
 }
